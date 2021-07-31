@@ -4,6 +4,7 @@
     <title></title>
     <meta charset="utf-8">
     <script src="https://kit.fontawesome.com/7c2d9bf567.js" crossorigin="anonymous"></script>
+    
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -19,24 +20,60 @@
                 <li class="activites"><a href="#">Activités</a></li>
                 <li class="inscription"><a href="#">S'inscrire</a></li>
             </ul>
-
+            
         </nav>
     </header>
-
+    
     <div id="intro">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
     </div>
-    <!-- ----- FILTRES ----- -->
+    <!-- ----- SEARCH ----- -->
     <div id="searchBar">
         <div id="loc">
             <i class="fas fa-map-marker-alt"></i>
         </div>
         <div id="btn_search">
-            <input type="search" name="lieu" placeholder="Marseille,France..." id="recherche"> 
-        </div id="search">
+            <input type="search" name="lieu" placeholder="Marseille, France" id="recherche"> 
+        </div>
         <div><input type="submit" id="search" value="Rechercher">
         </div>
+    </div>
+    
+    <!-- ----- FILTRES ----- -->
+    <div id="filtres">
+        
+        <p>Filtres</p>
+        
+        <div id="eco">
+            <i class="fas fa-money-bill-wave"></i>
+                <button class="btn_filtre"><a href="#">économique</a></button>
+        </div>
+            
+        <div id="famille">
+            <i class="fas fa-child"></i>
+            <button class="btn_filtre"><a href="#">Familial</a></button>
+        </div>
+
+        <div id="couples">
+            <i class="fas fa-heart"></i>
+            <button class="btn_filtre"><a href="#">Romantique</a></button>
+        </div>
+
+        <div id="animaux">
+            <i class="fas fa-dog"></i>
+            <button class="btn_filtre"><a href="#">Animaux autorisés</a></button>
+        </div>
+    </div>
+
+    <div id="infos">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+        
+        
+        
+        
     </div>
 </body>
 </html>

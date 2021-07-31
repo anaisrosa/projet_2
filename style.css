@@ -7,63 +7,77 @@
 body {
     margin-left: 50px;
     font-family: 'Raleway', sans-serif;
+    margin-top: 0px;
 }
 
 header {
-display:flex;
-justify-content: space-between;
+    display:flex;
+    justify-content: space-between;
 }
 
 #logo {
     margin-top: 30px;
-
+    
 }
 
 ul {
     display: flex;
     list-style: none;
-    margin-top: 30px;
-    margin-right: 30px;
-    
+    margin-top: 0px;
+    margin-right: 30px; 
 }
 
 li {
     padding: 15px;
     font-size: 1em;
     font-weight: 400;
+    padding-top: 40px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #0065FC;
+    padding: 0 5px 0 5px;
+    margin: 0 15px 0 15px;
 }
 
 .activites a {
-  color: black;  
+    color: black;  
+    font-size: 1em;
 }
 
-.hebergements .inscription {
+.hebergements {
     color: #0065FC;
-
+    font-size: 1em;
+    border-top: solid 2px #0065FC;
 }
 
+.inscription
+{
+    color: #0065FC;
+    font-size: 1em;
+    font-weight: bold ;
+}
 nav ul li a:hover {
     color: #0065FC;
+    border: solid top white;
 }
 
 nav ul li:hover {
     color: #0065FC;
-    border-top: solid 2px #0065FC;
+    
 }
 
-/* ----- FILTRES ----- */
+/* ----- SEARCH ----- */
 
 h1 {
     font-weight: 700;
+    font-size: 1.4em;
 }
 
 p {
-font-size:1em;
+    font-size:1em;
+    font-weight: 500;
 }
 
 #searchBar {
@@ -72,12 +86,12 @@ font-size:1em;
 
 #loc {
     background-color: #f2f2f2 ;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 10px 0 0 10px;
     display:flex;
     justify-content:center;
-    align-items:center  
+    align-items:center;
 }
 
 #btn_search{
@@ -91,20 +105,80 @@ input{
     border-top: solid 2px #f2f2f2;
     border-bottom: solid 2px #f2f2f2;
     font-family: 'Raleway', sans-serif;
-    padding-left: 10px;
-    
-
+    font-size: 1em;
+    padding-left: 20px;
+    width: 235px;
+    background-color: white;
+}
 ::placeholder {
     font-weight: 700;
     color: black;
-  }
+}
 
 #search {
     background-color: #0065FC ;
-    height: 40px;
-    width: 100px;
+    height: 50px;
+    width: 135px;
+    padding: 0;
     border: solid 2px #0065FC;
     border-radius: 0 10px 10px 0;
     color: white;
     font-weight: 700;
+    font-size: 1em;
+}
+
+/* ----- FILTRES ----- */
+#filtres {
+    display: flex;
+    margin-top: 45px;
+    margin-right:30%;
+}
+
+#filtres p {
+    font-family: "Raleway", sans sans-serif;
+    font-weight: 900;
+    font-size: 1.1em;
+    padding-top: 25px;
+}
+
+#filtres .btn_filtre a{
+    font-family: "Raleway", sans sans-serif;
+    font-weight: 800; 
+    font-size: 1.1em; 
+    text-decoration: none;
+    color: black ;
+}
+.btn_filtre{
+    border:none;
+    width: auto;
+    height:50px;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+#filtres i{
+    display: flex;
+    color: #0065FC;
+    background-color: #DEEBFF ;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#eco, #famille, #couples, #animaux {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border: solid 2px #f2f2f2;
+    border-radius: 25px;
+    margin:30px;
+    
+    
+}
+
+#infos {
+    display:flex;
+    align-items: center;
 }
