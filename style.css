@@ -73,11 +73,14 @@ nav ul li:hover {
 h1 {
     font-weight: 700;
     font-size: 1.4em;
+    margin-bottom: 0;
+
 }
 
 p {
-    font-size:1em;
+    font-size: 0.95em;
     font-weight: 500;
+    margin-top: 5px;
 }
 
 #searchBar {
@@ -128,43 +131,55 @@ input{
 }
 
 /* ----- FILTRES ----- */
-#filtres {
+
+#filtre {
     display: flex;
-    margin-top: 45px;
-    margin-right:30%;
+    align-items: baseline;
+    text-transform: capitalize;
 }
 
-#filtres p {
+#filtre h2 {
     font-family: "Raleway", sans sans-serif;
     font-weight: 900;
     font-size: 1.1em;
     padding-top: 25px;
+    margin-right:25px;
 }
 
-#filtres .btn_filtre a{
+#filtre .btn_filtre a{
     font-family: "Raleway", sans sans-serif;
-    font-weight: 800; 
+    font-weight: 900; 
     font-size: 1.1em; 
     text-decoration: none;
     color: black ;
+    letter-spacing: -1px;
 }
 .btn_filtre{
     border:none;
-    width: auto;
-    height:50px;
+    height:45px;
     background-color: rgba(255, 255, 255, 0);
+    padding-right:20px;
+    padding-left: 15px;
+    font-family: "Raleway", sans sans-serif;
+    font-weight: 900 bold;
+    font-size: 1.1em;
 
 }
 
-#filtres i{
+#filtre i{
     display: flex;
     color: #0065FC;
     background-color: #DEEBFF ;
     border-radius: 25px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+    margin: -2px;
     justify-content: center;
     align-items: center;
+}
+
+#eco a  {
+    text-transform: capitalize;
 }
 
 #eco, #famille, #couples, #animaux {
@@ -172,13 +187,67 @@ input{
     justify-content:space-between;
     align-items:center;
     border: solid 2px #f2f2f2;
+    box-sizing: border-box;
     border-radius: 25px;
-    margin:30px;
-    
-    
+    margin-right:25px;
 }
 
 #infos {
     display:flex;
+    align-items: baseline;
+    margin-top:25px;
+}
+
+#infos i{
+    display: flex;
+    color: #0065FC;
+    justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    border: solid 3px #f2f2f2;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7em;
+}
+
+#infos p {
+    padding-left: 10px;
+}
+
+/* ----- HEBERGEMENTS MARSEILLE ----- */
+#search_results{
+    max-width: 880px;
+    max-height: 630px;
+    background-color: #f2f2f2;
+}
+
+.hôtel
+{
+    display: block;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin:15px;
+    padding-right: 15px;
+}
+
+#search_results a{
+    text-decoration: none;
+    color: black;
+}
+
+#results_marseille {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin-left: 0px;
+}
+
+.fa {
+    color: #f2f2f2;
+}
+
+.checked {
+    color: #0065FC;
 }
