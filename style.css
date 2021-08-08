@@ -46,19 +46,19 @@ nav ul li a {
     margin: 0 15px 0 15px;
 }
 
-.activites a {
+.li_act a {
     color: black;  
     font-size: 1em;
 }
 
-.hebergements {
+.li_host {
     color: #0065FC;
     font-size: 1em;
     border-top: solid 2px #0065FC;
     padding: 35px 30px;
 }
 
-.inscription {
+.li_subscribe {
     color: #0065FC;
     font-size: 1em;
     font-weight: bold ;
@@ -79,13 +79,14 @@ h1 {
     margin-bottom: 0;
     margin-block-start: 0;
     margin-top: 30px;
-
+    
 }
 
 p {
     font-size: 1em;
     font-weight: 500;
     margin-top: 10px;
+    margin-block-end: 0;
 }
 
 #searchBar {
@@ -145,7 +146,7 @@ input{
 }
 
 #filtre h2 {
-
+    
     font-family: "Raleway", sans sans-serif;
     font-weight: 900;
     font-size: 1.1em;
@@ -186,7 +187,7 @@ input{
 
 .fa, .fas {
     font-weight: 900;
-    font-size: 1.1em;
+    /* font-size: 10em; */
 }
 
 #eco button  {
@@ -201,13 +202,15 @@ input{
     box-sizing: border-box;
     border-radius: 25px;
     margin-right:25px;
-
+    
 }
 
 #infos {
     display:flex;
     align-items: baseline;
     margin-top:30px;
+    margin: 30px 0;
+    
 }
 
 #infos i{
@@ -235,7 +238,7 @@ input{
 }
 
 
-#hebergements {
+#s_host {
     flex: 2;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -243,7 +246,7 @@ input{
     padding: 35px 30px;
 }
 
-#populaires{
+#a_popular{
     margin-top: 0;
     flex: 1;
     background-color: #f2f2f2;
@@ -252,30 +255,28 @@ input{
 }
 
 #results a {
-text-decoration: none;
-color: black;  
-font-size: 1em;
-
+    text-decoration: none;
+    color: black;  
+    font-size: 1em;
+    
 }
 
-#hotel_results {
+#results_h {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top:25px;
 }
 
-.hotel {
+.h_cards {
     background-color: white;
     border-radius: 15px;
-    padding: 10px;
-    width: 250px;
-    height: 200px;
+    padding: 5px;
+    box-shadow: -10px 15px 10px #f2f2f2;
 }
 
-.img_wrap_hotel {
+.cards_wrap {
     max-width: 100%;
     width: 100%;
     max-height: 110px;
@@ -284,65 +285,179 @@ font-size: 1em;
 }
 
 figure {
-   
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-#bloc_titre_populaire {
+
+#title_popular {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+#title_popular h3 {
+    margin-top: 0;
+}
+
+.h_pop_text {
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 130px;
 }
 
 .img_wrap_populaire {
     width: 100%;
-    height: 155px;
+    height: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
-#btn_populaire {
- 
+.card_pop {
     background-color: white;
     border-radius: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 0.1fr;
-    height: 155px;
-    margin: 15px;
-    padding:10px;
+    grid-template-columns: 0.65fr 1fr 0.1fr;
+    padding:5px;
+    height: 130px;
 }
 
-#legende_populaire {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 100%;
-    
+.shadow {
+    box-shadow: -5px 5px 10px #c2c2c2;
 }
 
-#hebergements h3, #bloc_titre_populaire h3 {
+.title {
     font-size: 1.35em;
     margin-bottom: 0;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
-#result_populaire {
+#results_p {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 30px;
-
 }
 
-#hotel_populaire {
+.h_popular {
     padding-left: 20px;
 }
-
-#etoiles_populaire {
-    align-self: end;
-    padding-bottom: 10px;
+.photo_populaire {
+    max-height: 130px;
 }
 
+
+.card_bold_title {
+    font-family: "Raleway", sans sans-serif;
+    font-weight:900;
+    font-size: 1em;
+}
+.card_pop_title {
+margin-bottom: 5px;
+}
+
+.card_legend_padding{
+padding-left: 10px;
+
+}
+
+.card_desc {
+    font-size: 0.9em;
+    margin: top 0.2em;
+    
+}
+
+.h_pop_price{
+    margin-top:0;
+}
+
+.rating_stars .fa-star {
+    padding-top: 0.em;
+    color: #f2f2f2;
+    font-size: 0.7em;
+}
+
+
+.rating_stars .checked {
+    color: #0065FC;
+    font-size: 0.7em;
+}
+
+.rating_stars_pop {
+        align-self: end;
+}
+
+.hotel:hover {
+    transform: scale(1.025); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#more {
+    font-family: "Raleway", sans sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    margin-top: 40px;
+}   
+
+/* SECTION ACTIVITIES */
+
+#d_activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "b1 b2 b3 b4"
+    "b1 b5 b3 b6";
+    grid-gap: 30px;
+    grid-auto-rows: minmax(auto, 250px);
+}
+
+#d_activities article {
+display: flex;
+}
+
+#d_activities article figure {
+    display: flex;
+    flex-direction:column;
+    width:100%;
+}
+
+#d_activities article figure img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+#a_box1 {
+    grid-area: b1;
+    background-color: blue;
+}
+
+#a_box2 {
+    grid-area: b2;
+    background-color: blueviolet;
+}
+
+#a_box3 {
+    grid-area: b3;
+    background-color: burlywood;
+}
+
+#a_box4 {
+    grid-area: b4;
+    background-color:chartreuse;
+}
+
+#a_box5 {
+    grid-area: b5;
+    background-color: red;
+}
+
+#a_box6 {
+    grid-area: b6;
+    background-color: darkcyan;
+}
