@@ -37,33 +37,33 @@
             <div id="btn_search">
                 <input type="search" name="lieu" placeholder="Marseille, France" id="recherche"> 
             </div>
-            <div><input type="submit" id="search" value="Rechercher">
+            <div class="search_input"><input type="submit" id="search" value="Rechercher">
             </div>
         </div>
         
-        <!-- FILTRES -->
-        <div id="filtre">
+        <!-- FILTERS -->
+        <div id="filter">
             
             <h2>Filtres</h2>
             
-            <div id="eco">
+            <div id="eco" class="btn_filtre">
                 <i class="fas fa-money-bill-wave"></i>
-                <button class="btn_filtre">économique</button>
+                <button class="category_filter">économique</button>
             </div>
             
-            <div id="famille">
+            <div id="famille" class="btn_filtre">
                 <i class="fas fa-child"></i>
-                <button class="btn_filtre">Familial</button>
+                <button class="category_filter">Familial</button>
             </div>
             
-            <div id="couples">
+            <div id="couples" class="btn_filtre">
                 <i class="fas fa-heart"></i>
-                <button class="btn_filtre">Romantique</button>
+                <button class="category_filter">Romantique</button>
             </div>
             
-            <div id="animaux">
+            <div id="animaux" class="btn_filtre">
                 <i class="fas fa-dog"></i>
-                <button class="btn_filtre">Animaux autorisés</button>
+                <button class="category_filter">Animaux autorisés</button>
             </div>
         </div>
         
@@ -172,11 +172,11 @@
                     </article>
                     
                 </div>
-
+                
                 <div id="more"> 
                     <a href="#">Afficher plus</a>
                 </div>
-
+                
             </section>    
             
             
@@ -189,11 +189,10 @@
                 
                 <div id="results_p">
                     
-                    <article class="card_pop shadow">
+                    <article class="h_card_pop shadow">
                         <div class="photo_populaire">
-                            <img class="img_wrap_populaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre luxueuse avec lit double et décoration barroque">
+                            <img class="img_wrap_populaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre luxueuse, décoration baroque avec lit double.">
                         </div>
-                        
                         <div class="h_popular">
                             <div class="h_pop_text">
                                 <h3 class="card_bold_title card_pop_title">Hôtel le soleil du matin</h3>
@@ -203,19 +202,16 @@
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
                                     <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>   
+                                    <span class="fa fa-star checked"></span>
                                 </div>
                             </div>
-                            
-                            
                         </div>
                     </article>
                     
-                    <article class="card_pop shadow">
+                    <article class="h_card_pop shadow">
                         <div class="photo_populaire">
-                            <img class="img_wrap_populaire" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre luxueuse, ésprit loft avec lit double.">
+                            <img class="img_wrap_populaire" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre luxueuse, décoration industrielle avec lit double.">
                         </div>
-                        
                         <div class="h_popular">
                             <div class="h_pop_text">
                                 <h3 class="card_bold_title card_pop_title">Au coeur de l'eau Chambre d'hôte</h3>
@@ -228,16 +224,13 @@
                                     <span class="fa fa-star"></span>    
                                 </div>
                             </div>
-                            
-                            
                         </div>
                     </article>
                     
-                    <article class="card_pop shadow">
+                    <article class="h_card_pop shadow">
                         <div class="photo_populaire">
-                            <img class="img_wrap_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec lit double.">
+                            <img class="img_wrap_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre lumineuse avec lit double.">
                         </div>
-                        
                         <div class="h_popular">
                             <div class="h_pop_text">
                                 <h3 class="card_bold_title card_pop_title">Hôtel Tout bleu et blanc</h3>
@@ -250,53 +243,76 @@
                                     <span class="fa fa-star"></span>    
                                 </div>
                             </div>
-                            
-                            
                         </div>
                     </article>
                 </div>
             </aside>
         </div>
-
+        
         <section id="s_activities">
-                <h2>Les plus populaires</h2>
-
-            <article id="a_box1" class="shadow" >
+            <h2>Activités à Marseille</h2>
+            
+            <article id="a_box1" class="shadow card_act" >
                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port de Marseille">
                 <h3>Vieux Port</h3>
             </article>
-
-            <article id="a_box2" class="shadow">
-
-                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                    <h3 class="shadow">Fort de Pomègues</h3>
+            
+            <article id="a_box2" class="shadow card_act">
+                
+                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                <h3 class="shadow">Fort de Pomègues</h3>
             </article>
-
-            <article id="a_box3" class="shadow">
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                    <h3>Parc National des Calanques</h3>
+            
+            <article id="a_box3" class="shadow card_act">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                <h3>Parc National des Calanques</h3>
             </article>
-
-            <article id="a_box4" class="shadow">
-                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-garde">
-                    <h3 class="shadow">Notre-Dame-de-la-garde</h3>
+            
+            <article id="a_box4" class="shadow card_act">
+                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-garde">
+                <h3 class="shadow">Notre-Dame-de-la-garde</h3>
             </article>
-
-            <article id="a_box5" class="shadow">
-                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
-                    <h3 class="shadow">Îles du Frioul</h3>
+            
+            <article id="a_box5" class="shadow card_act">
+                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
+                <h3 class="shadow">Îles du Frioul</h3>
             </article>
-
-            <article id="a_box6" class="shadow">
-                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
-                    <h3 class="shadow">Parc Longchamp</h3>
+            
+            <article id="a_box6" class=" card_act">
+                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
+                <h3 class="shadow">Parc Longchamp</h3>
             </article>
-
-
+            
         </section>
         
-        
-        
     </main>
+    <div class="f_bg">
+        <footer>
+            <div id="f_about">
+                <h4>À propos</h4>
+                <ul>
+                    <li><a href="#"></a>Fonctionnement du site</li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#"></a>Données et confidentialité</li>
+                </ul>
+            </div>
+            <div id="f_hosting">
+                <h4>Nos hébergements</h4>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div id="f_assistance">
+                <h4>Assistance</h4>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous consulter</a></li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
+    
 </body>
 </html>
