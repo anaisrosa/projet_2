@@ -1,0 +1,236 @@
+/* RESPONSIVE SMALL > MOBILE */
+@media screen and (max-width: 375px) {
+    main {
+        max-width: 100%;
+        
+    }
+    
+    /* ----- HEADER ----- */ 
+    
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #logo {
+        margin-top: 0;
+        padding: 1rem;
+        
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding-inline-start: 0;
+    }
+    
+    nav li{
+        padding-top: 0;
+        margin-left: 0;
+        
+    }
+    
+    nav ul li a {
+        padding-bottom: 2rem;
+        margin: 0;
+        
+    }
+    
+    .li_host {
+        padding: 0;
+        margin-top: 0.5rem;
+        border-top: none;
+        border-bottom: solid 4px #0065FC;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .li_subscribe {
+        position:absolute;
+        top:2em;
+        right:2em;
+        font-weight: 600;
+    }
+    
+    .li_act{
+        margin-top: 0.5rem;
+        border-bottom: solid 4px #f2f2f2;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    
+    h1, #intro p {
+        padding: 0 1.5rem;
+        max-width: 100% ;
+    }
+    
+    #searchBar{
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        padding-left: 1.5rem;
+        padding-top: 1.5rem;
+        
+    }
+    
+    #btn_search{
+        margin-left: 1rem;
+    }
+    
+    loc{
+        width: 3.2rem;
+    }
+    
+    input, #recherche {
+        width: 14rem;
+        border-top: solid 2px #f2f2f2;
+        margin-left: -1rem;
+    }
+    
+    #search {
+        width:3.2rem;
+        border-radius: 1rem;
+        text-indent: -999em;
+    }
+    
+    #search{
+        display: none;
+    }
+    
+    .btn_search_mobile {
+        display: inline-block;
+        color: white;
+        background-color: #0065fc;
+        border-radius: 10px;
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        border-right-style: none;
+        border-right: none;
+    }
+    
+    
+    /* ----- FILTERS ----- */
+    #filter {
+        padding: 0 1.5rem;
+        display: block;
+        
+    }
+    
+    #eco, #famille, #couples, #animaux {
+        border: solid 3px #f2f2f2;
+    }
+    
+    #filter_flex{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .btn_filtre{
+        margin-bottom: 0.5rem;
+    }
+    
+    #infos{
+        
+        padding: 0 1rem;
+        margin-top: 0;
+        
+    }
+    
+    #infos i{
+        display: flex;
+        border: solid 2px #f2f2f2;
+        border-radius: 0.5rem;
+        height: 1rem;
+        width: 1rem;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #results {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    
+    #a_popular{
+        border-radius: 0;
+        width: 90%;
+    }
+    
+    #s_host{
+        background-color:#fff;
+        padding: 0.5rem;
+        margin-right: 0;
+        
+    }
+    
+    #results_h{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    #a_popular{
+        padding: 1.5rem 1.5rem;
+    }
+    
+    .h_cards{
+        align-content: center;
+        width:85%;
+        margin-left: 1.5rem;
+        
+    }
+    
+    #s_host h2{
+        padding: 1.5rem;;
+    }
+    
+    #s_activities {
+        display: block;
+        width: 100%;
+    }
+    
+    #s_card_act_flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #s_card_act_flex :nth-child(1) { order: 1; }
+    
+    #s_card_act_flex :nth-child(2) {  order: 2; }
+    
+    #s_card_act_flex :nth-child(3) { order: 4; }
+    
+    #s_card_act_flex :nth-child(4) { order: 5; }
+    
+    #s_card_act_flex :nth-child(5) { order: 3; }
+    
+    #s_card_act_flex :nth-child(6) { order: 6; }
+    
+    .card_act{
+        width: 85%;
+        height: 8rem;
+        margin:1rem 1.5rem;
+    }
+    
+    #s_activities article{
+        margin: 2rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+    
+    footer ul li{
+        margin-top: 0.5rem ;
+    }
+}
