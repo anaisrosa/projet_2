@@ -65,7 +65,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #0065FC;
-    border: solid top white;
+    border-top: solid white;
 }
 
 nav ul li:hover {
@@ -414,12 +414,12 @@ input{
     margin-block-end: 0;
 }
 
-.h_pop_price{
+.h_pop_price {
     margin-top:0;
 }
 
 .rating_stars .fa-star {
-    padding-top: 0.em;
+    padding-top: 0;
     color: #f2f2f2;
     font-size: 0.7em;
 }
