@@ -58,12 +58,106 @@
         bottom: -4px;
     }
 
-   
-    
-
-   
-
-    #intro, #searchBar, #filter, #infos, #results, #s_activities, .f_bg {
-        display:none;
+    #intro, #searchBar, #filter, #infos {
     }
+
+    #intro {
+        text-align: center;
+        margin-top: 4rem;;
+    }
+
+    #searchBar{
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0 2.5rem 0;
+    }
+
+    .filter_title {
+        display: none;
+    }
+
+    #filter_flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+    }
+
+    .btn_filtre {
+        margin-bottom: 0.8rem;;
+    }
+
+    .category_filter {
+    height: 1.8rem;
+    padding: 0 0.5rem;
+    font-size: 0.85em;
+    }
+
+#infos {
+    margin-top: 0;
+    justify-content: center;
+    
+}
+    #infos p{
+    text-align: center;
+}
+
+#results {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#results_p {
+    display: flex;
+    flex-direction: row;
+}
+
+.h_pop_text {
+    display:grid;
+    grid-template-rows: 0.5fr 0.25fr 0.25fr;
+    height: 100%;
+    width: 100%;
+
+}
+.card_pop_title{
+font-size: 0.8rem;
+}
+
+.h_pop_price {
+    font-size : 0.7rem;
+}
+
+h_card_pop {
+    height: 100%;
+}
+
+#a_popular{
+    border-radius: 0;
+    background-color: #f2f2f2;
+}
+    #s_host {
+        background-color: #fff;
+        padding:1.5rem;
+        margin-right: 0;
+    }
+
+    .card_act {
+        margin: auto;
+    }
+
+    #s_activities {
+padding: 1.5rem;
+    }
+
+    
+.f_bg {
+    max-width:100%;
+}
+
+footer {
+    width: 100%;
+}
+
+#f_about, #f_assistance, #f_hosting {
+    padding-left: 1.5rem;
 }
