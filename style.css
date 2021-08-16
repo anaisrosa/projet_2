@@ -448,8 +448,7 @@ input{
     font-family: "Raleway", sans sans-serif;
     font-size: 1em;
     font-weight: 900;
-    padding-top: 3.5em;
-    padding-left: 0.5em;
+    margin-top: 2.5rem;
 }   
 
 /* SECTION ACTIVITIES */
@@ -483,7 +482,7 @@ input{
 }
 
 #s_activities h3{
-    padding-left: 1em;
+    padding-left:0.5rem;
     font-size: 1em;
 }
 
