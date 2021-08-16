@@ -1,8 +1,7 @@
 /* RESPONSIVE SMALL > MOBILE */
 @media screen and (max-width: 375px) {
     main {
-        max-width: 100%;
-        
+        max-width: 100%;   
     }
     
     /* ----- HEADER ----- */ 
@@ -14,8 +13,7 @@
     
     #logo {
         margin-top: 0;
-        padding: 1rem;
-        
+        padding: 1rem; 
     }
     
     nav ul {
@@ -24,16 +22,14 @@
         padding-inline-start: 0;
     }
     
-    nav li{
+    nav li {
         padding-top: 0;
         margin-left: 0;
-        
     }
     
     nav ul li a {
         padding-bottom: 2rem;
-        margin: 0;
-        
+        margin: 0;  
     }
     
     .li_host {
@@ -53,7 +49,7 @@
         font-weight: 600;
     }
     
-    .li_act{
+    .li_act {
         margin-top: 0.5rem;
         border-bottom: solid 4px #f2f2f2;
         width: 50%;
@@ -64,24 +60,20 @@
     
     h1, #intro p {
         padding: 0 1.5rem;
+        text-align: center;
         max-width: 100% ;
     }
     
-    #searchBar{
+    #searchBar {
         display: flex;
         justify-content: flex-start;
         align-content: center;
         padding-left: 1.5rem;
         padding-top: 1.5rem;
-        
     }
     
-    #btn_search{
+    #btn_search {
         margin-left: 1rem;
-    }
-    
-    loc{
-        width: 3.2rem;
     }
     
     input, #recherche {
@@ -96,7 +88,7 @@
         text-indent: -999em;
     }
     
-    #search{
+    #search {
         display: none;
     }
     
@@ -104,7 +96,7 @@
         display: inline-block;
         color: white;
         background-color: #0065fc;
-        border-radius: 10px;
+        border-radius: 0 10px 10px 0;
         height: 50px;
         width: 50px;
         border-style: none;
@@ -112,36 +104,40 @@
         border-right: none;
     }
     
-    
     /* ----- FILTERS ----- */
+
     #filter {
         padding: 0 1.5rem;
-        display: block;
-        
+        display: block; 
     }
     
     #eco, #famille, #couples, #animaux {
         border: solid 3px #f2f2f2;
+        margin-right: 0.4rem;
     }
     
-    #filter_flex{
+    #filter_flex {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
     }
     
-    .btn_filtre{
+    .btn_filtre {
         margin-bottom: 0.5rem;
     }
-    
-    #infos{
-        
+
+    .category_filter {
+        border: none;
         padding: 0 1rem;
-        margin-top: 0;
-        
+        font-size: 1em;
     }
     
-    #infos i{
+    #infos {
+        padding: 0 1rem;
+        margin-top: 0;
+    }
+    
+    #infos i {
         display: flex;
         border: solid 2px #f2f2f2;
         border-radius: 0.5rem;
@@ -158,39 +154,34 @@
         width: 100%;
     }
     
-    #a_popular{
+    #a_popular {
         border-radius: 0;
         padding: 1.5rem 1.5rem;
     }
     
-    #s_host{
+    #s_host {
         background-color:#fff;
         padding: 0.5rem;
         margin-right: 0;
-        
     }
     
-    #results_h{
+    #results_h {
         display: flex;
         flex-direction: column;
         margin: auto;
     }
-    
-
-    
-    .h_cards{
+        
+    .h_cards {
         align-content: center;
         width:85%;
         margin-left: 1.5rem;
-        
     }
     
-    #s_host h2{
+    #s_host h2 {
         padding: 1.5rem;
-
     }
 
-    #s_activities h2{
+    #s_activities h2 {
         padding: 1.5rem;
         align-self: flex-start;
     }
@@ -200,11 +191,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 1.5rem;
     }
     
     #s_activities :nth-child(1) { order: 1; }
     
-    #s_activities :nth-child(2) {  order: 2; }
+    #s_activities :nth-child(2) { 
+        order: 2;
+        background: #fff;
+        box-shadow: -0.3rem 0.3rem 0.6rem #c2c2c2;
+    }
     
     #s_activities :nth-child(3) { order: 3; }
     
@@ -216,17 +212,21 @@
 
     #s_activities :nth-child(7) { order: 7; }
     
-    .card_act{
+    .card_act {
         width: 85%;
         height: 8rem;
         margin:1rem 1.5rem;
     }
     
-    #s_activities article{
+    #s_activities article {
         margin: 2rem;
     }
 
-    .shadow_act_mobile{
+    #a_box1 {
+        margin-top: 0!important;
+    }
+
+    .shadow_act_mobile {
         margin-top: 0;
         padding: 1rem;
         border-bottom: solid 1px #f2f2f2;
@@ -239,11 +239,12 @@
         width: 100%;
     }
     
-    footer ul li{
+    footer ul li {
         margin-top: 0.5rem ;
     }
 
     #f_about, #f_assistance, #f_hosting, #more {
         padding-left: 1.5rem;
     }
+
 }
