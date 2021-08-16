@@ -301,7 +301,7 @@ input{
 #results_h {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.9rem;
+    grid-gap: 2rem;
     grid-auto-rows: minmax(6.25rem, auto);
     margin-top:1.55rem;
 }
@@ -319,7 +319,7 @@ input{
     width: 100%;
     max-height: 6.9rem;
     object-fit: cover;
-    border-radius: 0.9rem 0.9rem 0 0;
+    border-radius: 0.6rem 0.6rem 0 0;
 }
 
 .a_img_desc {
@@ -340,6 +340,9 @@ input{
 #title_popular h2 {
     margin-top: 0;
     font-size: 1.4rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-bottom: 0.20rem;
 }
 
 .h_pop_text {
@@ -379,7 +382,8 @@ input{
 #results_p {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1.9rem;
+    grid-gap: 1.5rem;
+    padding: 1rem 0;
 }
 
 .h_popular {
@@ -405,6 +409,7 @@ input{
 
 .card_legend_padding{
     padding-left: 0.6rem;
+    padding-top: 0.20rem;
     
 }
 
@@ -443,7 +448,8 @@ input{
     font-family: "Raleway", sans sans-serif;
     font-size: 1em;
     font-weight: 900;
-    margin-top: 2.5rem;
+    padding-top: 3.5em;
+    padding-left: 0.5em;
 }   
 
 /* SECTION ACTIVITIES */
@@ -452,7 +458,7 @@ input{
     margin-top:2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 4rem 8rem 2rem 2rem 2rem 3rem 1rem 2rem;
+    grid-template-rows: 2rem 8rem 2rem 2rem 2rem 3rem 1rem 2rem;
     grid-gap: 1rem;
     
 }
@@ -468,7 +474,7 @@ input{
 #s_activities h2{
     grid-column: 1/5;
     margin-block-start: 0;
-    margin-block-end: 0;
+    margin-block-end: -0.25rem;
     padding: 0.6rem;
     background-color: #fff;
     border-radius: 0 0 1.25rem 1.25rem;
@@ -477,7 +483,8 @@ input{
 }
 
 #s_activities h3{
-    padding-left:0.5rem;
+    padding-left: 1em;
+    font-size: 1em;
 }
 
 .card_act {
@@ -564,6 +571,7 @@ footer a {
     text-decoration: none;
     color: black;  
     font-size: 1em;
+
 }
 
 footer ul{
@@ -575,7 +583,7 @@ footer ul{
 }
 footer ul li {
     list-style: none;
-    padding: 0%;
+    padding-bottom: 0.5rem;
 }
 
 #f_about ul{

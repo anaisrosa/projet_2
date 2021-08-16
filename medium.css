@@ -58,8 +58,6 @@
         bottom: -4px;
     }
 
-    #intro, #searchBar, #filter, #infos {
-    }
 
     #intro {
         text-align: center;
@@ -161,3 +159,5 @@ footer {
 #f_about, #f_assistance, #f_hosting {
     padding-left: 1.5rem;
 }
+
+  }
