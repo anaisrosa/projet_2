@@ -83,6 +83,10 @@ nav ul li:hover {
     color: #0065FC;
 }
 
+.li_act:hover, .li_subscribe:hover {
+    border-top: solid 2px #0065FC;
+}
+
 h1 {
     font-weight: 700;
     font-size: 1.4em;
@@ -171,7 +175,7 @@ input {
 }
 
 #filter h2 {
-    font-family: "Raleway", sans sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 1.1em;
     padding-top: 1.9rem;
@@ -185,7 +189,7 @@ input {
 
 
 #filter .category_filter a {
-    font-family: "Raleway", sans sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 900; 
     font-size: 1.1em; 
     text-decoration: none;
@@ -198,7 +202,7 @@ input {
     height:2.8rem;
     background-color: rgba(255, 255, 255, 0);
     padding: 0 1.25rem;
-    font-family: "Raleway", sans sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 900;
     font-size: 1.1em;
 }
@@ -401,7 +405,7 @@ input {
 }
 
 .card_bold_title {
-    font-family: "Raleway", sans sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight:900;
     font-size: 1em;
     margin-block-start: 0;
@@ -449,7 +453,7 @@ input {
 }
 
 #more {
-    font-family: "Raleway", sans sans-serif;
+    font-family: "Raleway", "sans-serif";
     font-size: 1em;
     font-weight: 900;
     margin-top: 3.2rem;
@@ -461,8 +465,8 @@ input {
     margin-top:2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
-    grid-gap: 1rem;
+    grid-template-rows: auto 14rem 1rem 1rem 1rem 10rem;
+    column-gap: 2rem;
 }
 
 #s_activities article {
@@ -515,7 +519,7 @@ input {
 
 #a_box2 {
     grid-column: 2/3;
-    grid-row: 2/6;
+    grid-row: 2/4;
 }
 
 #a_box3 {
@@ -525,7 +529,7 @@ input {
 
 #a_box4 {
     grid-column: 4/5;
-    grid-row: 2/3;
+    grid-row: 2/2;
 }
 
 #a_box5 {
@@ -536,7 +540,7 @@ input {
 
 #a_box6 {
     grid-column: 4/5;
-    grid-row: 3/7;  
+    grid-row: 4/7;  
 }
 
 .wrapper_box {
