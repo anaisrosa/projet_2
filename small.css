@@ -1,5 +1,6 @@
 /* RESPONSIVE SMALL > MOBILE */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767px) {
+
     main {
         max-width: 100%;   
     }
@@ -57,6 +58,7 @@
         padding-bottom: 1rem;
     }
     
+    
     h1, #intro p {
         padding: 0 1.5rem;
         text-align: center;
@@ -65,9 +67,8 @@
     
     #searchBar {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-content: center;
-        padding-left: 1.5rem;
         padding-top: 1.5rem;
     }
     
@@ -168,12 +169,12 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+        align-items: center;
     }
         
     .h_cards {
         align-content: center;
-        width:85%;
-        margin-left: 1.5rem;
+        width: 90%;
     }
     
     #s_host h2 {
@@ -183,6 +184,10 @@
     #s_activities h2 {
         padding: 1.5rem;
         align-self: flex-start;
+    }
+
+    #s_activities article {
+        height: 12em;
     }
     
     #s_activities {
@@ -195,11 +200,7 @@
     
     #s_activities :nth-child(1) { order: 1; }
     
-    #s_activities :nth-child(2) { 
-        order: 2;
-        background: #fff;
-        box-shadow: -0.3rem 0.3rem 0.6rem #c2c2c2;
-    }
+    #s_activities :nth-child(2) { order: 2; }
     
     #s_activities :nth-child(3) { order: 3; }
     
@@ -212,13 +213,7 @@
     #s_activities :nth-child(7) { order: 7; }
     
     .card_act {
-        width: 85%;
-        height: 8rem;
-        margin:1rem 1.5rem;
-    }
-    
-    #s_activities article {
-        margin: 2rem;
+        width: 90%;
     }
 
     #a_box1 {
@@ -227,8 +222,7 @@
 
     .shadow_act_mobile {
         margin-top: 0;
-        padding: 1rem;
-        border-bottom: solid 1px #f2f2f2;
+        padding-top: 1rem;
         border-radius: 0 0 1rem 1rem;
     }
     
